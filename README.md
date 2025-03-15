@@ -11,4 +11,4 @@ HTML, CSS, JavaScript 이용한 첫 웹페이지(클론코딩)
 
 # 완성 페이지
 
-![완성 페이지]](image.png)
+![완성 페이지](image.png)
