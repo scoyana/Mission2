@@ -33,15 +33,76 @@ body {
 
 #dynamic {
   position: relative;
+  display: inline-block;
 }
 
 #dynamic::after {
   content: "";
   display: block;
   position: absolute;
-  top:0;
-  right: 0;
+  top: 0;
+  right: -10px;
   width: 4px;
   height: 100%;
   background-color: white;
+}
+
+#dynamic.active::after {
+  display: none;
+}
+
+.highlight {
+  color: rgb(196, 19, 166);
+  text-shadow: 2px 2px 5px #000;
+}
+
+/* docs-links 컨테이너 스타일 */
+#docs-links {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+/* 링크 스타일 */
+#docs-links a {
+  color: white;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 5px 10px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background 0.3s, transform 0.3s;
+}
+
+/* 호버 시 효과 */
+#docs-links a:hover {
+  background: rgba(255, 255, 255, 0.4);
+  transform: scale(1.05);
+}
+
+/* docs-links 영역 스타일은 그대로 유지 */
+
+/* 빡공팟 링크 컨테이너 스타일 */
+#another-link {
+  margin-top: 30px; /* 기존 링크와의 간격 조정 */
+  text-align: center;
+}
+
+/* 빡공팟 링크 스타일 */
+#another-link a {
+  font-size: 1.5rem; /* 기존 링크보다 크게 */
+  font-weight: bold;
+  color: white;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.3s, transform 0.3s;
+}
+
+/* 호버 효과 */
+#another-link a:hover {
+  background: rgba(255, 255, 255, 0.5);
+  transform: scale(1.1);
 }
